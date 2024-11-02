@@ -20,7 +20,7 @@
 .gridContainer {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  gap: 30;
+  gap: 30px;
   padding: 70px;
 }
 .notFindPackageContainer{
@@ -38,16 +38,16 @@
 .customPackageRequestBtn:hover{
     background-color: #fac365;
 }
-@media (max-width:1100) {
+@media (max-width:1100px) {
     .gridContainer{
       grid-template-columns: repeat(2,1fr);
     }
 }
-@media (max-width:720) {
+@media (max-width:720px) {
     .gridContainer{
       grid-template-columns: repeat(1,1fr);
       padding: 50px 20px;
-      gap: 50;
+      gap: 50px;
     }
     .packageHeading{
       padding: 50px 0px;
