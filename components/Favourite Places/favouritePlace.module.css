@@ -1,0 +1,93 @@
+.featuredHeading {
+  color: #ffb400;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.favouriteHeading {
+  text-align: center;
+  font-weight: 700;
+  font-size: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.CardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 85px 170px;
+  gap: 25px;
+}
+.card {
+  border-radius: 2%;
+  width: 100%;
+  height: fit-content;
+  overflow: hidden;
+  border: 1px solid rgb(226, 223, 223);
+}
+.cardImageParent {
+  height: 70%;
+}
+.cardImage {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.cardTextParent {
+  height: 30%;
+  padding: 35px 20px;
+}
+.para1 {
+  display: flex;
+  align-items: center;
+  color: #97a0a7;
+  font-size: 18px;
+  padding-top: 12px;
+}
+.para2 {
+  font-weight: 700;
+  font-size: 25px;
+  padding-top: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.para3 {
+  color: #4cafa4;
+  font-weight: 700;
+  font-size: 20px;
+  padding-top: 12px;
+
+}
+.para3 span {
+  font-weight: 500;
+  color: #97a0a7;
+  font-size: 20px;
+  padding-top: 12px;
+
+}
+.para4 {
+  color: #97a0a7;
+  font-size: 20px;
+  padding-top: 12px;
+
+}
+
+@media (max-width:1300px) {
+    .CardContainer{
+      grid-template-columns: repeat(2,1fr);
+      padding: 80px 40px;
+    }
+}
+@media (max-width:750) {
+    .featuredHeading{
+      font-size: 4vw;
+    }
+    .favouriteHeading{
+      font-size: 10vw;
+    }
+    .CardContainer{
+      grid-template-columns: repeat(1,1fr);
+      padding: 80px 20px;
+    }
+    .cardTextParent{}
+}
+

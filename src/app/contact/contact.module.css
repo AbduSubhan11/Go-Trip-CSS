@@ -1,0 +1,106 @@
+.contactHeading {
+  color: #f7a411;
+  text-align: center;
+  padding: 120px 0px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.flexContainer {
+  display: flex;
+  gap: 20px;
+  padding: 0px 40px;
+}
+.contactLeft {
+  width: 80%;
+}
+.getInTouchHeading {
+  color: black;
+  font-size: 20px;
+}
+.NameEmailParent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 15px;
+}
+.SubjectTextarea {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+.Input {
+  outline: none;
+  height: 45px;
+  padding-left: 4px;
+  border: 1px solid rgb(213, 202, 202);
+}
+.Textarea {
+  outline: none;
+  height: 120px;
+  padding-left: 4px;
+  border: 1px solid rgb(213, 202, 202);
+}
+.sendButton {
+  border: 1px solid #014b85;
+  padding: 20px 60px;
+  margin-top: 30px;
+  background-color: transparent;
+}
+.sendButton:hover {
+  background-color: #014b85;
+  color: white;
+}
+.contactRight {
+  width: fit-content;
+}
+.emailAndParaContainer,
+.numberAndParaContainer {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+.svg,
+.paragraph {
+  color: gray;
+}
+.MyLocationParent,
+.MyNumberParent,
+.MyEmailParent {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  gap: 10;
+}
+.rightText {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media (max-width: 1100) {
+  .flexContainer {
+    flex-direction: column;
+  }
+  .contactLeft {
+    width: 100%;
+  }
+  .contactRight{
+    width: 100%;
+  }
+}
+
+@media (max-width:500) {
+  .flexContainer{
+    padding: 0px 20px;
+  }
+  .NameEmailParent{
+    grid-template-columns: repeat(1,1fr);
+    gap: 30;
+  }
+  .contactRight{
+    padding: 0px 30px;
+  }
+  .contactHeading{
+    padding: 60px 0px;
+  }
+}

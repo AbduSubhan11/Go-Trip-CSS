@@ -1,0 +1,106 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  max-width: 100%;
+  background-color: white;
+  box-shadow: 0px 0.4px 5px rgb(186, 185, 185);
+}
+.navlogo {
+  height: 40px;
+  width: 100%;
+}
+.navLinksParent {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+.hamburgerClickNavLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 50%;
+  padding: 80px 10px;
+  position: fixed;
+  border: 1px solid #f3f3f3;
+  background-color: white;
+}
+.Hamburger {
+  display: none;
+}
+.navLink {
+  margin: 0px 10px;
+}
+.navLink:hover {
+  color: #014b85;
+  text-decoration: underline;
+}
+.svg {
+  height: 25px;
+}
+.active {
+  color: #014b85;
+  text-decoration: underline;
+}
+
+.hamburgerNotClickNavSvg {
+  display: none;
+}
+.hamburgerClickNavSvg {
+  display: block;
+}
+.HamburgerButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+}
+.HamburgerSpan {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: black;
+}
+.HamburgerSpan1Rotate {
+  transform: rotate(45deg) translateY(10);
+}
+.HamburgerSpan2Opacity {
+  opacity: 0;
+}
+.HamburgerSpan3Rotate {
+  transform: rotate(-45deg) translateY(-12);
+}
+
+@media (max-width: 1200px) {
+  .navLinksParent {
+    font-size: 22px;
+  }
+  .navLink {
+    padding: 8px 0px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 5px;
+    width: 100%;
+    font-size: 15px;
+    border-bottom: 1px solid rgb(210, 201, 201);
+  }
+  .hamburgerNotClickNavLinks {
+    display: none;
+  }
+  .Hamburger {
+    display: block;
+  }
+}

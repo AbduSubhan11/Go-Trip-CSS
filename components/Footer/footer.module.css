@@ -1,0 +1,64 @@
+.footer {
+  background-color: #112a3e;
+  color: white;
+  margin-top: 190px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 100px 60px;
+  gap: 10px;
+}
+.footerdiv1 p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 20px;
+  padding-right: 32px;
+}
+.footerLogo {
+  height: 50px;
+}
+.footerdiv2 h1,
+.footerdiv3 h1 {
+  font-weight: 700;
+  font-size: 25px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.linkParent {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.link {
+  padding-top: 10px;
+  font-weight: 200;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: fit-content;
+}
+.link:hover {
+  color: #f7a411;
+  padding-left: 8px;
+}
+.developedby {
+  text-align: center;
+  padding: 20px 0px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.developedby span {
+  color: #f7a411;
+}
+
+@media (max-width: 750px) {
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 560px) {
+  .gridContainer {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50;
+    padding: 100px 25px;
+  }
+}

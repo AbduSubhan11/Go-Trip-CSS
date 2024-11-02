@@ -1,0 +1,34 @@
+.container{
+    max-width: 100%;
+    height: 100vh;
+    background-image: url(/Images/worldleading.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.heading1{
+    font-size: 2vw;
+    color: white;
+    padding-top: 450px;
+    font-weight: 400;
+}
+.heading2,.heading3{
+    font-weight: 700;
+    color: white;
+    font-size: 4vw;
+    padding-top: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width:800px) {
+    .heading1{
+        font-size: 4vw;
+        padding-top: 400px;
+    }
+    .heading2,.heading3{
+        font-size: 6vw;
+    }
+}
