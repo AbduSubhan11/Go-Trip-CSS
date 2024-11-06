@@ -1,0 +1,38 @@
+.container {
+  background-image: url(/Images/buildings.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  margin-bottom: 50px;
+  padding: 20px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.quote {
+  font-size: 50px;
+  font-weight: 700;
+  padding: 0px 60px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.advisor {
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: underline;
+  padding-top: 50px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    height: 400px;
+  }
+  .quote {
+    padding: 0px 20px;
+    font-size: 22px;
+  }
+
+}

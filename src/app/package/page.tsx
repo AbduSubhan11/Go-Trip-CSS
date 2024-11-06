@@ -1,16 +1,17 @@
 import React from "react";
-import styles from "./package.module.css"
+import styles from "./package.module.css";
 import PackagesCards from "../../../components/Packages Cards/PackagesCards";
 import Link from "next/link";
+import TourQuote from "../../../components/Tour Quote/Tour Quote";
 
 function Page() {
   return (
     <div>
-      <h1 className={`${styles.packageHeading}`}>
-        Our Packages
-      </h1>
-      <div >
-        <h1 className={`${styles.populardestinationHead}`}>Popular Destinations</h1>
+      <h1 className={`${styles.packageHeading}`}>Our Packages</h1>
+      <div>
+        <h1 className={`${styles.populardestinationHead}`}>
+          Popular Destinations
+        </h1>
         <p className={`${styles.packagePara}`}>
           We all live in an age that belongs to the young at heart. Life that is
           becoming extremely fast, day to.
@@ -49,14 +50,13 @@ function Page() {
           name="The Mountain in Forest"
         />
       </div>
+      <TourQuote />
       <div className={`${styles.notFindPackageContainer}`}>
         <h1>
-          Did not find your Package? Feel free to ask us. We will make it for you
+          Did not find your Package? Feel free to ask us. We will make it for
+          you
         </h1>
-        <Link
-          href={"/contact"}
-          className={`${styles.customPackageRequestBtn}`}
-        >
+        <Link href={"/contact"} className={`${styles.customPackageRequestBtn}`}>
           REQUEST CUSTOM PRICE
         </Link>
       </div>
